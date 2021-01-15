@@ -1,1 +1,14 @@
 <h1>New Article</h1>
+
+<%= form_for :article do |f|%>
+  <p>
+    Title<br/>
+    <%= f.text_field :title%>
+  </p>
+
+  <p>
+    Text<br/>
+    <%= f.text_field :text%>
+  </p>
+  
+<% end %>  
